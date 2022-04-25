@@ -1,0 +1,15 @@
+[Unit]
+Description=jeedisplay
+Documentation=https://github.com/philippeJ/jeedisplay
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/var/www/html/plugins/jeedisplay/core/php
+ExecStart=/usr/bin/php salsa.php
+Restart=on-failure
+RestartSec=1000ms
+SyslogIdentifier=jeedom-jeedisplay
+
+[Install]
+WantedBy=multi-user.target
