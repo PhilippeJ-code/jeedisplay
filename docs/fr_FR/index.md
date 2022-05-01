@@ -54,7 +54,8 @@
 
 ![Manager_WIFI](../images/manager_wifi.png "Manager_WIFI")
 
-    Cliquez sur "Configure WIFI" pour choisir un réseau Wifi sur lequel le module se connectera. L'adresse IP devra être fixée sur le routeur.
+    Cliquez sur "Configure WIFI" pour choisir un réseau Wifi sur lequel le module se connectera. 
+    L'adresse IP devra être fixée sur le routeur.
 
 ## 5. Site Web du module
 
