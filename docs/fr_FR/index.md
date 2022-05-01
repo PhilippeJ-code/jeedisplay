@@ -10,10 +10,11 @@
 
 ## 2. Configuration de l'équipement
 
-    Pour utiliser le plugin il est nécessaire de créer un virtuel qui va contenir les informations qui seront envoyées au module d'affichage.
-    On peut également créer des scénarios qui seront activés par le module d'affichage.
+    Pour utiliser le plugin il est nécessaire de créer un virtuel qui va contenir les informations qui seront envoyées 
+    au module d'affichage. On peut également créer des scénarios qui seront activés par le module d'affichage.
 
-    Par exemple, création d'un virtuel avec une consigne température et deux scénarios qui permettront d'augmenter ou de diminuer cette consigne.
+    Par exemple, création d'un virtuel avec une consigne température et deux scénarios qui permettront d'augmenter ou de 
+    diminuer cette consigne.
 
 ## 3. Programmation du module
 
@@ -42,13 +43,13 @@
 
     Au premier démarrage du Wifi, le module se met en attente de connexion WIFI.
     
-    ![Attente_WIFI](../images/attente_wifi.jpg "Attente_WIFI")
+    ![Attente_WIFI](../images/attente_wifi.png "Attente_WIFI")
 
     Il crée un réseau WIFI nommé Core2AP sur lequel il faut se connecter avec un smartphone par exemple ou tout autre
-    appareil capable de se connecter au WIFI. Quand la connexion WIFI est établie, il faut naviguer à l'adresse 192.168.4.1 pour accéder à la page Web de
-    configuration du WIFI.
+    appareil capable de se connecter au WIFI. Quand la connexion WIFI est établie, il faut naviguer à l'adresse 192.168.4.1 
+    pour accéder à la page Web de configuration du WIFI.
 
-    ![Manager_WIFI](../images/manager_wifi.jpg "Manager_WIFI")
+    ![Manager_WIFI](../images/manager_wifi.png "Manager_WIFI")
 
     Cliquez sur "Configure WIFI" pour choisir un réseau Wifi sur lequel le module se connectera.
 
