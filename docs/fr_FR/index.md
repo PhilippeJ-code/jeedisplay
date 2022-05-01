@@ -347,3 +347,74 @@
     "iconOff": ""
 }
 ```
+
+## 6.2.4 Objet "toggleButton"
+
+  Bouton On/Off
+
+    "name": "toggleButton". Indique le type de l'objet
+    "idValue": 4368. Id Jeedom de la commande définie dans le virtuel qui sera testée ici
+    "x": 20. Position en X
+    "y": 45. Position en Y
+    "w": 130. Largeur de l'image
+    "h": 60. Hauteur de l'image
+    "iconOn": "/bulbon.bmp". Image affichée si valeur <> 0
+    "iconOff": "/bulboff". Image affichée si valeur = 0
+    "label": "Bureau". Label qui sera affiché
+
+```json
+{
+    "name": "toggleButton",
+    "idValue": 4368,
+    "x": 20,
+    "y": 45,
+    "w": 130,
+    "h": 60,
+    "iconOn": "/bulbon.bmp",
+    "iconOff": "/bulboff.bmp",
+    "label": "Bureau"
+}
+```
+
+## 6.2.5 Objet "image"
+
+    "name": "image". Indique le type de l'objet
+    "x": 0. Position en X
+    "y": 53. Position en Y
+    "w": 100. Largeur de l'image
+    "h": 100. Hauteur de l'image
+    "icon": "/icon/unknown.bmp". Image affichée
+    "idCondition": 4372. Id Jeedom de la commande qui permettra de changer l'affichage en fonction de la valeur de la condition
+    "conditions": []. Liste des conditions
+        "value": "0". "Eclaircies".
+        "icon": "/icon/partly-cloudy-day.bmp". Changement de l'icone
+
+```json
+{
+    "name": "image",
+    "x": 0,
+    "y": 53,
+    "w": 100,
+    "h": 100,
+    "icon": "/icon/unknown.bmp",
+    "idCondition": 4372,
+    "conditions": [
+        {
+            "value": "Eclaircies",
+            "icon": "/icon/partly-cloudy-day.bmp"
+        },
+        {
+            "value": "Nuit nuageuse",
+            "icon": "/icon/partly-cloudy-night.bmp"
+        },
+        {
+            "value": "Ensoleillé",
+            "icon": "/icon/clear-day.bmp"
+        },
+        {
+            "value": "Averses de pluie faible",
+            "icon": "/icon/lightRain.bmp"
+        }
+    ]
+},
+```
