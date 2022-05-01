@@ -141,6 +141,96 @@
   }
 }
 ```
+## 6.2 Affichage d'un panneau
 
+    On énumère une liste de panneaux en indiquant leur nom "name" et leur fond d'écran "background".
 
+    Le module gère les informations de glissement sur l'écran, on indique 
+        le sens du glissement "direction" : "left"|"right"|"up"|"down"
+        et l'action qui sera effectuée "action" : "panel" affichage d'un autre panel de nom "value" : "panel4"|"panel1" dans l'exemple
 
+    On indique également la liste des objets qui composent le panneau "objects"
+
+```json 
+{
+  "panels": [
+    {
+      "name": "panel0",
+      "background": "/fond.jpg",    
+      "swipes": [
+        {
+          "direction": "left",
+          "action": "panel",
+          "value": "panel4"
+        },
+        {
+          "direction": "right",
+          "action": "panel",
+          "value": "panel1"
+        }
+      ],
+      "objects": [
+        {
+          "name": "button",
+          "x": 20,
+          "y": 45,
+          "w": 80,
+          "h": 80,
+          "icon": "/tools.bmp",
+          "action": "panel",
+          "value": "panel1"
+        }
+      ]
+    }
+  ]
+}
+
+```
+
+## 6.2.1 Objet "button"
+
+![Bouton](../images/bouton.png "Bouton")
+
+    L'exemple suivant permet d'afficher un bouton avec une image bulboff.bmp et un label Off si aucune lumière n'est allumée,
+    une image bulbon.bmp et un label On(x) x indiquant le nombre de lumières allumées. Le bouton donne accès à un panel qui donne
+    l'état de toutes les lumières.
+
+    Les différents paramètres de l'objet button
+
+    "name": "button". Indique le type de l'objet
+    "x": 220. Position en X
+    "y": 45. Position en Y
+    "w": 80. Largeur du bouton
+    "h": 80. Hauteur du bouton
+    "icon": "/bulbon.bmp". L'image qui sera affichée dans le coin supérieur haut du bouton
+    "idValue": 4370. Id Jeedom de la commande définie dans le virtuel qui sera affichée ici
+    "label": "On (#value#)". Formatage de l'affichage de la valeur
+    "action": "panel". Action à effectuer sur appui du bouton. Ici "panel" changement de panneau
+    "value": "panel3". Nom du nouveau panel à afficher
+    "idCondition": 4370. Id Jeedom de la commande qui permettra de changer l'affichage en fonction de la valeur de la condition
+    "conditions": []. Liste des conditions
+        "value": "0". Valeur de la commande
+        "label": "Off". Changement de label 
+        "icon": "/bulboff.bmp"
+```json
+{
+    "name": "button",
+    "x": 220,
+    "y": 45,
+    "w": 80,
+    "h": 80,
+    "icon": "/bulbon.bmp",
+    "idValue": 4370,
+    "label": "On (#value#)",
+    "action": "panel",
+    "value": "panel3",
+    "idCondition": 4370,
+    "conditions": [
+        {
+            "value": "0",
+            "label": "Off",
+            "icon": "/bulboff.bmp"
+        }
+    ]
+}
+``` 
