@@ -91,8 +91,9 @@
 
 ## 6.1 Affichage de la barre de statut
 
-    Voici un code complet qui permet d'afficher toutes les informations disponibles sur le module. Avant l'affichage de la barre de statut,
-    on remarque un paramètre "defaultPanel" qui spécifie le panneau qui sera affiché au démarrage du module, ici "Panel0".
+    Voici un code complet qui permet d'afficher toutes les informations disponibles sur le module. Avant l'affichage de la barre 
+    de statut, on remarque un paramètre "defaultPanel" qui spécifie le panneau qui sera affiché au démarrage du module, 
+    ici "Panel0".
 
     La barre de statut est configurée en "statusBar", tout d'abord sa poisition "top" ou "bottom" et ensuite les objets qui la compose.
     Chaque objet doit contenir un paramètre "x" qui indique la position de l'objet dans la barre de statut.
@@ -107,7 +108,7 @@
 ![Barre](../images/barre.png "Barre")
 
 ```json
-
+{
   "defaultPanel": "panel0",
   "statusBar": {
     "position": "top",
@@ -137,7 +138,8 @@
         "x": 304
       }
     ]
-  },
+  }
+}
 ```
 
 
