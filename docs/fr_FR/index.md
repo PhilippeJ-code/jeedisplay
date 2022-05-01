@@ -43,13 +43,13 @@
 
     Au premier démarrage du Wifi, le module se met en attente de connexion WIFI.
     
-    ![Attente_WIFI](../images/attente_wifi.png "Attente_WIFI")
+![Attente_WIFI](../images/attente_wifi.png "Attente_WIFI")
 
     Il crée un réseau WIFI nommé Core2AP sur lequel il faut se connecter avec un smartphone par exemple ou tout autre
     appareil capable de se connecter au WIFI. Quand la connexion WIFI est établie, il faut naviguer à l'adresse 192.168.4.1 
     pour accéder à la page Web de configuration du WIFI.
 
-    ![Manager_WIFI](../images/manager_wifi.png "Manager_WIFI")
+![Manager_WIFI](../images/manager_wifi.png "Manager_WIFI")
 
     Cliquez sur "Configure WIFI" pour choisir un réseau Wifi sur lequel le module se connectera.
 
