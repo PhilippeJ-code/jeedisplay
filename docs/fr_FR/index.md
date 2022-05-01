@@ -424,3 +424,11 @@
     ]
 },
 ```
+
+## 7 Ce qui donne
+
+![Panel0](../images/panel0.png "Panel0")
+![Panel1](../images/panel1.png "Panel1")
+![Panel2](../images/panel2.png "Panel2")
+![Panel3](../images/panel3.png "Panel3")
+![Panel4](../images/panel4.png "Panel4")
