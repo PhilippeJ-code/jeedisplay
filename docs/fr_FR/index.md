@@ -260,6 +260,8 @@
 
 ## 6.2.3 Objet "circle"
 
+![Cercle](../images/cercle.png "Cercle")
+
     "name": "circle". Indique le type de l'objet
     "x": 160. Position en X
     "y": 120. Position en Y
@@ -352,6 +354,8 @@
 
   Bouton On/Off
 
+![BoutonOnOff](../images/boutonOnOff.png "BoutonOnOff")
+
     "name": "toggleButton". Indique le type de l'objet
     "idValue": 4368. Id Jeedom de la commande définie dans le virtuel qui sera testée ici
     "x": 20. Position en X
@@ -377,6 +381,8 @@
 ```
 
 ## 6.2.5 Objet "image"
+
+![Image](../images/image.png "Image")
 
     "name": "image". Indique le type de l'objet
     "x": 0. Position en X
