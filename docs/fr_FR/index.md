@@ -234,3 +234,116 @@
     ]
 }
 ``` 
+
+## 6.2.2 Objet "text"
+
+![Texte](../images/texte.png "Texte")
+
+    "name": "text". Indique le type de l'objet
+    "x": 10. Position en X
+    "y": 45. Position en Y
+    "w": 320. Largeur du texte
+    "h": 20. Hauteur du texte
+    "label": "Température du core : #tempcore#°c". Formatage de l'affichage de la valeur
+
+
+```json
+{
+    "name": "text",
+    "x": 10,
+    "y": 45,
+    "w": 320,
+    "h": 20,
+    "label": "Température du core : #tempcore#°c"
+}
+```
+
+## 6.2.3 Objet "circle"
+
+    "name": "circle". Indique le type de l'objet
+    "x": 160. Position en X
+    "y": 120. Position en Y
+    "r": 80. Rayon
+    "r_int": 20. Rayon intérieur
+    "idValue": 4380. Id Jeedom de la commande définie dans le virtuel qui sera affichée ici
+    "label": "#value°c". Formatage de l'affichage de la valeur
+    "fontsize": 2. Taille de la police ( 1 à 4 )
+    "bkColor": "blue". Couleur de fond
+    "textColor": "blue". Couleur du texte
+    "idCondition": 4371. Id Jeedom de la commande qui permettra de changer l'affichage en fonction de la valeur de la condition
+    "conditions": []. Liste des conditions
+        "value": "0". "normal".
+        "textColor" "orange". Changement de la couleur du texte
+
+    "action": "jeedom". Exécute un scénario Jeedom
+    "value": "54". Id du scénario
+
+```json
+{
+    "name": "circle",
+    "x": 160,
+    "y": 120,
+    "r": 80,
+    "r_int": 70,
+    "idValue": 4380,
+    "label": "#value#°c",
+    "fontSize": 2,
+    "bkColor": "blue",
+    "textColor": "blue",
+    "idCondition": 4371,
+    "conditions": [
+        {
+            "value": "normal",
+            "textColor": "orange"
+        },
+        {
+            "value": "comfort",
+            "textColor": "red"
+        }
+    ]
+},
+{
+    "name": "circle",
+    "x": 275,
+    "y": 200,
+    "r": 40,
+    "idValue": 4325,
+    "label": "#value#°c",
+    "action": "jeedom",
+    "value": "54",
+    "idCondition": 4385,
+    "conditions": [
+        {
+            "value": "1",
+            "textColor": "red"
+        }
+    ]
+}
+
+```
+
+## 6.2.4 Objet "toggleIcon"
+
+  Icone On/Off
+
+    "name": "toggleIcon". Indique le type de l'objet
+    "idValue": 4367. Id Jeedom de la commande définie dans le virtuel qui sera testée ici
+    "x": 4. Position en X
+    "y": 40. Position en Y
+    "w": 36. Largeur de l'image
+    "h": 36. Hauteur de l'image
+    "iconOn": "/fire.bmp". Image affichée si valeur <> 0
+    "iconOff": "". Image affichée si valeur = 0. Dans cet exemple aucune image
+
+```json
+{
+    "name": "toggleIcon",
+    "idValue": 4367,
+    "x": 4,
+    "y": 40,
+    "w": 36,
+    "h": 36,
+    "iconOn": "/fire.bmp",
+    "iconOff": ""
+}
+```
